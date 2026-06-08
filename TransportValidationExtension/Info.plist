@@ -10,17 +10,17 @@
 			<array>
 				<dict>
 					<key>description</key>
-					<string>TransportValidationExtension</string>
+					<string>Transport Validation</string>
 					<key>factoryFunction</key>
 					<string>$(PRODUCT_MODULE_NAME).AudioUnitViewController</string>
 					<key>manufacturer</key>
-					<string>spfk</string>
+					<string>SpFk</string>
 					<key>name</key>
-					<string>Spongefork: TransportValidationExtension</string>
+					<string>Spongefork: Transport Validation</string>
 					<key>sandboxSafe</key>
 					<true/>
 					<key>subtype</key>
-					<string>sftv</string>
+					<string>tval</string>
 					<key>tags</key>
 					<array>
 						<string>Effect</string>
@@ -28,7 +28,7 @@
 					<key>type</key>
 					<string>aufx</string>
 					<key>version</key>
-					<integer>67072</integer>
+					<integer>1</integer>
 				</dict>
 			</array>
 		</dict>

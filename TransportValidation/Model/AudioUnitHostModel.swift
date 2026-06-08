@@ -39,7 +39,7 @@ class AudioUnitHostModel {
     var validationResult: AudioComponentValidationResult?
     var currentValidationData: String?
     
-    init(type: String = "aufx", subType: String = "sftv", manufacturer: String = "spfk") {
+    init(type: String = "aufx", subType: String = "tval", manufacturer: String = "SpFk") {
         self.type = type
         self.subType = subType
         self.manufacturer = manufacturer

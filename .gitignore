@@ -1,0 +1,15 @@
+# Xcode
+xcuserdata/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+
+# Carthage
+Carthage/Build/
+
+# Claude Code
+.claude/
