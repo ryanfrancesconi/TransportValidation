@@ -6,7 +6,7 @@
 //
 
 import CoreAudioKit
-import SPFKAudioWorkspace
+import SPFKAudioNodes
 
 @available(macOS 14, *)
 @MainActor
