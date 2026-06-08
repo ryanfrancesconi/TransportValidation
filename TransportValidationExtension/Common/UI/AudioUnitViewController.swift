@@ -25,7 +25,7 @@ public class AudioUnitViewController: AUViewController, AUAudioUnitFactory {
 
     nonisolated public func createAudioUnit(with componentDescription: AudioComponentDescription) throws -> AUAudioUnit {
         let au = try TransportValidationAU(componentDescription: componentDescription)
-        DispatchQueue.main.async {
+        Task { @MainActor in
             if self.isViewLoaded {
                 self.attach(au)
             } else {
