@@ -6,8 +6,9 @@
 //
 
 import CoreAudioKit
-import SPFKAUHost
+import SPFKAudioWorkspace
 
+@available(macOS 14, *)
 @MainActor
 public class AudioUnitViewController: AUViewController, AUAudioUnitFactory {
     private var pendingAU: TransportValidationAU?
