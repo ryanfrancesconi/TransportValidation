@@ -6,8 +6,8 @@ A macOS Audio Unit v3 extension that reads and displays host transport state in 
 
 The AU (`aufx/tval/SpFk`) passes audio through unmodified. On every render cycle it reads:
 
-- **Musical context** — tempo, time signature, beat position, measure downbeat, sample offset to next beat
-- **Transport state** — transport flags (playing, recording, looping), sample position, cycle start/end
+- **Musical context** - tempo, time signature, beat position, measure downbeat, sample offset to next beat
+- **Transport state** - transport flags (playing, recording, looping), sample position, cycle start/end
 
 These values are captured into a `TransportSnapshot` and displayed in a live inspector panel that refreshes at 10 fps.
 
@@ -15,8 +15,8 @@ These values are captured into a `TransportSnapshot` and displayed in a live ins
 
 | Target | Description |
 |--------|-------------|
-| `TransportValidation` | Container app — hosts the AU using `AVAudioEngine` and `SimplePlayEngine` |
-| `TransportValidationExtension` | AU App Extension (`.appex`) — thin factory that wires `TransportValidationAU` to `TransportValidationViewController` |
+| `TransportValidation` | Container app - hosts the AU using `AVAudioEngine` and `SimplePlayEngine` |
+| `TransportValidationExtension` | AU App Extension (`.appex`) - thin factory that wires `TransportValidationAU` to `TransportValidationViewController` |
 
 The AU implementation lives in [spfk-au-host](https://github.com/ryanfrancesconi/spfk-au-host) (`SPFKAUHost/Validation/`), which this project links as a local Swift package.
 
